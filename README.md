@@ -385,12 +385,7 @@ git commit -m "feat: add my feature"
 git push origin feature/my-feature
 
 Then open a pull request.
-📄 License
-Add your project's license here.
-Example:
-MIT License
 
-or specify your own license terms.
 📺 Horizon IPTV
 A simple way to discover and watch publicly accessible live TV streams.
 🔎 Discover · ⭐ Save · ▶️ Watch
