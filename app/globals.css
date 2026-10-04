@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root, [data-theme="dark"] { --bg: 9 9 18; --panel: 24 24 42; --fg: 238 238 250; --muted: 150 150 180; --line: 255 255 255; color-scheme: dark; }
+[data-theme="light"] { --bg: 244 244 250; --panel: 255 255 255; --fg: 22 22 40; --muted: 100 100 125; --line: 0 0 0; color-scheme: light; }
+
+body { @apply bg-base text-fg antialiased; background-image: radial-gradient(60rem 30rem at 10% -10%, rgb(139 92 246 / .18), transparent), radial-gradient(50rem 30rem at 100% 0%, rgb(59 130 246 / .14), transparent); background-attachment: fixed; }
+.glass { @apply bg-panel/70 backdrop-blur-xl border border-line/10; }
+.btn { @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-3 py-2 text-sm font-medium transition hover:bg-line/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent disabled:opacity-40; }
+.btn-primary { @apply bg-gradient-to-r from-accent to-accent-blue text-white hover:brightness-110 hover:bg-transparent; }
+.field { @apply rounded-xl bg-line/5 border border-line/10 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent w-full; }
+.skeleton { @apply animate-pulse rounded-2xl bg-line/10; }
+*:focus-visible { outline: 2px solid #8b5cf6; outline-offset: 2px; }
